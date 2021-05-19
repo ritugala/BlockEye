@@ -73,7 +73,7 @@ const skills = {
   data: [
     {
       title: "Artificial Intelligence",
-      fileName: "DataScienceImg",
+      fileName: "AiImg",
       skills: [
         "We Develop highly scalable production ready models for various deeplearning and statistical use cases",
       ],
@@ -112,7 +112,7 @@ const skills = {
     },
     {
       title: "Blockchain",
-      fileName: "FullStackImg",
+      fileName: "BlockchainImg",
       skills: [
         "We investigate Blockchain with the mindset “How could Blockchain technology potentially benefit us?” rather than “How can we make our problem fit into the Blockchain technology paradigm?”",
       ],

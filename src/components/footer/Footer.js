@@ -19,13 +19,16 @@ export default function Footer(props) {
           style={{ color: props.theme.secondaryText }}
         >
           <a href="#" className="spacing">
-            Tab 1
+            Home
           </a>
           <a href="#" className="spacing">
-            Tab 2
+            About Us
           </a>
           <a href="#" className="spacing">
-            Tab 3
+            FAQs
+          </a>
+          <a href="#" className="spacing">
+            Contact
           </a>
         </div>
         {/* <ToggleSwitch theme={props.theme} onToggle={props.onToggle}/> */}
