@@ -5,7 +5,7 @@ class FeelingProud extends Component {
     const theme = this.props.theme;
     return (
       <svg
-        id="b52d7e2d-d80f-4111-b6ed-d15502ee1edd"
+        id="hand-robot-svg"
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
         width="711.1879"

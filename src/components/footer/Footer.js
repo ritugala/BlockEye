@@ -6,11 +6,28 @@ import { greeting } from "../../portfolio.js";
 
 export default function Footer(props) {
   return (
-    <div className="footer-div">
+    <div className=" container footer-div">
       <Fade>
-        <p className="footer-text" style={{ color: props.theme.secondaryText }}>
-          Made with <span role="img">❤️</span> by {greeting.title}
-        </p>
+        <div
+          className="footer-text left"
+          style={{ color: props.theme.secondaryText }}
+        >
+          © 2021 BlockEye, all rights reserved
+        </div>
+        <div
+          className="footer-text right"
+          style={{ color: props.theme.secondaryText }}
+        >
+          <a href="#" className="spacing">
+            Tab 1
+          </a>
+          <a href="#" className="spacing">
+            Tab 2
+          </a>
+          <a href="#" className="spacing">
+            Tab 3
+          </a>
+        </div>
         {/* <ToggleSwitch theme={props.theme} onToggle={props.onToggle}/> */}
       </Fade>
     </div>
