@@ -48,7 +48,7 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
-                  to="#"
+                  to="/aboutUs"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
@@ -60,7 +60,7 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
-                  to="#"
+                  to="/contact"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
@@ -72,7 +72,7 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
-                  to="#"
+                  to="/faqs"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}

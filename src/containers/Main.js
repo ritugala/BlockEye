@@ -30,29 +30,22 @@ export default class Main extends Component {
                 render={(props) => <Home {...props} theme={this.props.theme} />}
               />
               <Route
-                path="/experience"
-                exact
-                render={(props) => (
-                  <Experience {...props} theme={this.props.theme} />
-                )}
+                path="/aboutUs"
+                render={(props) => <Home {...props} theme={this.props.theme} />}
               />
-              <Route
+              {/* <Route
                 path="/education"
-                render={(props) => (
-                  <Education {...props} theme={this.props.theme} />
-                )}
+                render={(props) => <Home {...props} theme={this.props.theme} />}
               />
               <Route
                 path="/opensource"
                 render={(props) => (
                   <Opensource {...props} theme={this.props.theme} />
                 )}
-              />
+              /> */}
               <Route
                 path="/contact"
-                render={(props) => (
-                  <Contact {...props} theme={this.props.theme} />
-                )}
+                render={(props) => <Home {...props} theme={this.props.theme} />}
               />
               <Route
                 path="/splash"
@@ -60,11 +53,15 @@ export default class Main extends Component {
                   <Splash {...props} theme={this.props.theme} />
                 )}
               />
-              <Route
+              {/* <Route
                 path="/projects"
                 render={(props) => (
                   <Projects {...props} theme={this.props.theme} />
                 )}
+              /> */}
+              <Route
+                path="/faqs"
+                render={(props) => <Home {...props} theme={this.props.theme} />}
               />
             </Switch>
           </HashRouter>
@@ -84,7 +81,7 @@ export default class Main extends Component {
                 path="/home"
                 render={(props) => <Home {...props} theme={this.props.theme} />}
               />
-              <Route
+              {/* <Route
                 path="/experience"
                 exact
                 render={(props) => (
@@ -102,12 +99,14 @@ export default class Main extends Component {
                 render={(props) => (
                   <Opensource {...props} theme={this.props.theme} />
                 )}
+              /> */}
+              <Route
+                path="/AboutUs"
+                render={(props) => <Home {...props} theme={this.props.theme} />}
               />
               <Route
                 path="/contact"
-                render={(props) => (
-                  <Contact {...props} theme={this.props.theme} />
-                )}
+                render={(props) => <Home {...props} theme={this.props.theme} />}
               />
               {/* <Route
 							path="/splash"
@@ -117,12 +116,16 @@ export default class Main extends Component {
 									theme={this.props.theme}
 								/>
 							)}
-						/> */}
+						/>
               <Route
                 path="/projects"
                 render={(props) => (
                   <Projects {...props} theme={this.props.theme} />
                 )}
+              /> */}
+              <Route
+                path="/faqs"
+                render={(props) => <Home {...props} theme={this.props.theme} />}
               />
             </Switch>
           </HashRouter>
