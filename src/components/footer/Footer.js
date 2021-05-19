@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { Fade } from "react-reveal";
 import { greeting } from "../../portfolio.js";
+import image from "./Blockeye logo.png";
 /* eslint-disable jsx-a11y/accessible-emoji */
 
 export default function Footer(props) {
@@ -12,7 +13,10 @@ export default function Footer(props) {
           className="footer-text left"
           style={{ color: props.theme.secondaryText }}
         >
-          © 2021 BlockEye, all rights reserved
+          <div className="row">
+            <img src={image} width="20%" height="25%"></img>
+          </div>
+          <div className="row">© 2021 BlockEye, all rights reserved</div>
         </div>
         <div
           className="footer-text right"

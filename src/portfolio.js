@@ -2,7 +2,7 @@
 
 // Website related settings
 const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
+  isSplash: false, // Change this to false if you don't want Splash screen.
 };
 
 //SEO Related settings
@@ -22,9 +22,9 @@ const greeting = {
   title: "BlockEye",
   logo_name: "Blockeye",
   subTitle: "Transforming the world through Blockchain and AI",
-  resumeLink:
-    "https://drive.google.com/open?id=1XYpYhLeqCdyx_q6l0bQoC7RgwQjAjXPf",
-  portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
+  // resumeLink:
+  //  "https://drive.google.com/open?id=1XYpYhLeqCdyx_q6l0bQoC7RgwQjAjXPf",
+  // portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
 };
 
 const socialMediaLinks = [
