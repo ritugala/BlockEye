@@ -3,14 +3,19 @@
   /* color: #868e96; */
   font-weight: bold;
   font-family: "Google Sans Regular";
-  block: inline;
+  display: inline-block;
   padding-left: 80px;
   padding-right: 80px;
   padding-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .footer-div {
   margin-top: 2rem;
+}
+
+.footer-line {
+  margin: 38px 64px;
 }
 
 .left {
@@ -23,7 +28,7 @@
 }
 
 .spacing {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 a {

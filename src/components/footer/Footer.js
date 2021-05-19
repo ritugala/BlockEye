@@ -9,18 +9,19 @@ export default function Footer(props) {
   return (
     <div className=" container footer-div">
       <Fade>
+        <hr className="footer-line" />
         <div
           className="footer-text left"
           style={{ color: props.theme.secondaryText }}
         >
-          <div className="row">
-            <img src={image} width="20%" height="25%"></img>
+          <div className="row" style={{ textAlign: "left" }}>
+            <img src={image} width="25%" height="25%"></img>
           </div>
           <div className="row">© 2021 BlockEye, all rights reserved</div>
         </div>
         <div
           className="footer-text right"
-          style={{ color: props.theme.secondaryText }}
+          style={{ color: props.theme.secondaryText, paddingTop: "70px" }}
         >
           <a href="#" className="spacing">
             Home
