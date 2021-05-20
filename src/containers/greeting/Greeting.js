@@ -1,10 +1,12 @@
 import React from "react";
 import "./Greeting.css";
+import "../../components/header/Header.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
+import Logo from "../../components/header/Logo";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -14,9 +16,13 @@ export default function Greeting(props) {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <h1 className="greeting-text" style={{ color: theme.text }}>
-                {greeting.title}
-              </h1>
+              <div className="row">
+                <Logo />
+                <h1 className="greeting-text" style={{ color: theme.text }}>
+                  {greeting.title}
+                </h1>
+              </div>
+
               <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
