@@ -7,13 +7,13 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Ashutosh's Portfolio",
+  title: "BlockEye",
   description:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   og: {
-    title: "Ashutosh Hathidara Portfolio",
+    title: "BlockEye",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "https://blockeye.github.io/#/",
   },
 };
 
@@ -72,10 +72,10 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Artificial Intelligence",
-      fileName: "AiImg",
+      title: "Blockchain",
+      fileName: "BlockchainImg",
       skills: [
-        "We Develop highly scalable production ready models for various deeplearning and statistical use cases",
+        "We investigate Blockchain with the mindset “How could Blockchain technology potentially benefit us?” rather than “How can we make our problem fit into the Blockchain technology paradigm?”",
       ],
       softwareSkills: [
         {
@@ -108,15 +108,6 @@ const skills = {
             color: "#3776AB",
           },
         },
-      ],
-    },
-    {
-      title: "Blockchain",
-      fileName: "BlockchainImg",
-      skills: [
-        "We investigate Blockchain with the mindset “How could Blockchain technology potentially benefit us?” rather than “How can we make our problem fit into the Blockchain technology paradigm?”",
-      ],
-      softwareSkills: [
         {
           skillName: "Ethereum",
           fontAwesomeClassname: "simple-icons:ethereum",
@@ -140,75 +131,15 @@ const skills = {
         },
       ],
     },
-    //    {
-    //      title: "Cloud Infra-Architecture",
-    //      fileName: "CloudInfraImg",
-    //      skills: [
-    //        "⚡ Experience working on multiple cloud platforms",
-    //        "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-    //        "⚡ Deploying deep learning models on cloud to use on mobile devices",
-    //        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
-    //      ],
-    //      softwareSkills: [
+    {
+      fileName: "HumanoidImg",
+      skills: [
+        "We explore Fairness, Accountability, Transparency, and Ethics in AI",
+      ],
+      softwareSkills: [],
+    },
     //        {
-    //          skillName: "GCP",
-    //          fontAwesomeClassname: "simple-icons:googlecloud",
-    //          style: {
-    //            color: "#4285F4",
-    //          },
-    //        },
-    //        {
-    //          skillName: "AWS",
-    //          fontAwesomeClassname: "simple-icons:amazonaws",
-    //          style: {
-    //            color: "#FF9900",
-    //          },
-    //        },
-    //        {
-    //          skillName: "Azure",
-    //          fontAwesomeClassname: "simple-icons:microsoftazure",
-    //          style: {
-    //            color: "#0089D6",
-    //          },
-    //        },
-    //        {
-    //          skillName: "Firebase",
-    //          fontAwesomeClassname: "simple-icons:firebase",
-    //          style: {
-    //            color: "#FFCA28",
-    //          },
-    //        },
-    //        {
-    //          skillName: "PostgreSQL",
-    //          fontAwesomeClassname: "simple-icons:postgresql",
-    //          style: {
-    //            color: "#336791",
-    //          },
-    //        },
-    //        {
-    //          skillName: "MongoDB",
-    //          fontAwesomeClassname: "simple-icons:mongodb",
-    //          style: {
-    //            color: "#47A248",
-    //          },
-    //        },
-    //        {
-    //          skillName: "Docker",
-    //          fontAwesomeClassname: "simple-icons:docker",
-    //          style: {
-    //            color: "#1488C6",
-    //          },
-    //        },
-    //        {
-    //          skillName: "Kubernetes",
-    //          fontAwesomeClassname: "simple-icons:kubernetes",
-    //          style: {
-    //            color: "#326CE5",
-    //          },
-    //        },
-    //      ],
-    //    },
-    //    {
+    //      title: "UI/UX Design",
     //      title: "UI/UX Design",
     //      fileName: "DesignImg",
     //      skills: [
