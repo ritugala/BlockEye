@@ -12,7 +12,12 @@ import HumanoidImg from "./HumanoidImg";
 function GetSkillSvg(props) {
   if (props.fileName === "AiImg") return <AiImg theme={props.theme} />;
   else if (props.fileName === "BlockchainImg")
-    return <BlockchainImg theme={props.theme} />;
+    return (
+      <BlockchainImg
+        theme={props.theme}
+        style={{ marginTop: "0px", marginLeft: "15%" }}
+      />
+    );
   else if (props.fileName === "HumanoidImg")
     return <HumanoidImg theme={props.theme} />;
   return <DesignImg theme={props.theme} />;

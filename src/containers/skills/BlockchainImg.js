@@ -1,8 +1,15 @@
 import React, { Component } from "react";
 import image from "./blockchain.jpg";
-export default class FullStackImg extends Component {
+export default class BlockchainImg extends Component {
   render() {
-    const theme = this.props.theme;
-    return <img src={image} width="698.75" height="432.37039"></img>;
+    //const theme = this.props.theme;
+    return (
+      <img
+        src={image}
+        width="498.75"
+        height="432.37039"
+        style={{ display: "block", margin: "auto" }}
+      ></img>
+    );
   }
 }
