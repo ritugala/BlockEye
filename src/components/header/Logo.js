@@ -7,7 +7,7 @@ export default class Logo extends Component {
     //const theme = this.props.theme;
     return (
       <div className="logo">
-        <img src={image} width="80%" height="45%"></img>
+        <img className="logo-img" src={image}></img>
       </div>
     );
   }

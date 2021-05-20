@@ -32,8 +32,8 @@
 
 h1.greeting-text {
   display: inline-block;
-  font-size: 90px;
-  line-height: 0.6;
+  line-height: 0.8;
+  margin-top: 4%;
 }
 
 .greeting-text {
@@ -64,6 +64,9 @@ h1.greeting-text {
   .greeting-text-p {
     font-size: 20px;
   }
+  h1.greeting-text {
+    font-size: 5vw;
+  }
 }
 @media (max-width: 768px) {
   .button-greeting-div {
@@ -73,6 +76,9 @@ h1.greeting-text {
     font-size: 30px;
     margin-top: 0px;
     text-align: center;
+  }
+  h1.greeting-text {
+    font-size: 10vw;
   }
   .greeting-nickname {
     font-size: 25px;

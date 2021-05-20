@@ -1,4 +1,9 @@
 .logo {
-  margin-right: -5%;
+  margin-right: -8%;
   float: left;
+  max-width: 50%;
+}
+
+.logo-img {
+  max-width: 60%;
 }
