@@ -7,13 +7,14 @@ import AiImg from "./AiImg";
 import BlockchainImg from "./BlockchainImg";
 import CloudInfraImg from "./CloudInfraImg";
 import DesignImg from "./DesignImg";
+import HumanoidImg from "./HumanoidImg";
 
 function GetSkillSvg(props) {
   if (props.fileName === "AiImg") return <AiImg theme={props.theme} />;
   else if (props.fileName === "BlockchainImg")
     return <BlockchainImg theme={props.theme} />;
-  else if (props.fileName === "CloudInfraImg")
-    return <CloudInfraImg theme={props.theme} />;
+  else if (props.fileName === "HumanoidImg")
+    return <HumanoidImg theme={props.theme} />;
   return <DesignImg theme={props.theme} />;
 }
 
@@ -36,11 +37,7 @@ class SkillSection extends Component {
               </Fade>
 
               <div className="skills-text-div">
-                <Fade right duration={1000}>
-                  <h1 className="skills-heading" style={{ color: theme.text }}>
-                    {skill.title}
-                  </h1>
-                </Fade>
+                <Fade right duration={1000}></Fade>
                 <Fade right duration={1500}>
                   <SoftwareSkill logos={skill.softwareSkills} />
                 </Fade>

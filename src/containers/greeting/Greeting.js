@@ -7,6 +7,7 @@ import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
 import Logo from "../../components/header/Logo";
+import FirstImage from "./FirstImage";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -25,7 +26,7 @@ export default function Greeting(props) {
 
               <p
                 className="greeting-text-p subTitle"
-                style={{ color: theme.secondaryText }}
+                style={{ color: theme.secondaryText, fontSize: "2em" }}
               >
                 {greeting.subTitle}
               </p>
@@ -38,8 +39,7 @@ export default function Greeting(props) {
             </div>
           </div>
           <div className="greeting-image-div">
-            {}
-            <FeelingProud theme={theme} />
+            <FirstImage />
           </div>
         </div>
       </div>

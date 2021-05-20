@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import image from "./ai.jpeg";
+import image from "./ai-3.jpg";
 
 export default class AiImg extends Component {
   render() {
