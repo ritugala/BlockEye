@@ -16,7 +16,7 @@ export default function Greeting(props) {
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
-            <div>
+            <div style={{ whiteSpace: "nowrap", overflowX: "auto" }}>
               <div className="row">
                 <Logo />
                 <h1 className="greeting-text" style={{ color: theme.text }}>
@@ -26,7 +26,12 @@ export default function Greeting(props) {
 
               <p
                 className="greeting-text-p subTitle"
-                style={{ color: theme.secondaryText, fontSize: "2em" }}
+                style={{
+                  color: theme.secondaryText,
+                  fontSize: "1.5em",
+                  display: "inline-block",
+                  marginTop: "-10px",
+                }}
               >
                 {greeting.subTitle}
               </p>

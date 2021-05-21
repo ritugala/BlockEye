@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import image from "./humanoid.jpg";
+import image from "./humanoid-min.jpg";
 
 export default class HumanoidImg extends Component {
   render() {

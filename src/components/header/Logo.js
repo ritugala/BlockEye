@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Logo.css";
-import image from "./Blockeye logo.png";
+import image from "./Blockeye-Cropped.png";
 
 export default class Logo extends Component {
   render() {

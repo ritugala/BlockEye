@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import image from "./ai-bct-2.png";
+import image from "./ai-bct-2-min.png";
 
 export default class FirstImage extends Component {
   render() {

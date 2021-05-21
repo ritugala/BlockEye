@@ -3,15 +3,13 @@ import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
-import AiImg from "./AiImg";
 import BlockchainImg from "./BlockchainImg";
 import CloudInfraImg from "./CloudInfraImg";
 import DesignImg from "./DesignImg";
 import HumanoidImg from "./HumanoidImg";
 
 function GetSkillSvg(props) {
-  if (props.fileName === "AiImg") return <AiImg theme={props.theme} />;
-  else if (props.fileName === "BlockchainImg")
+  if (props.fileName === "BlockchainImg")
     return (
       <BlockchainImg
         theme={props.theme}
