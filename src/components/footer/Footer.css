@@ -42,3 +42,15 @@ a {
 .footer-logo {
   text-align: left;
 }
+
+/* Media Query */
+@media (max-width: 1380px) {
+}
+@media (max-width: 768px) {
+  .footer-logo {
+    text-align: center;
+  }
+  .right {
+    width: 127%;
+  }
+}
