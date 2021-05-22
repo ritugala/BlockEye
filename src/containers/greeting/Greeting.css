@@ -9,12 +9,17 @@
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 2rem;
+  white-space: normal;
 }
 
 .gretting-main {
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
+}
+
+.greeting-logo-title {
+  display: inline-block;
 }
 
 .greeting-main {
@@ -88,7 +93,7 @@ h1.greeting-text {
     font-size: 16px;
     margin-right: 0px;
     line-height: normal;
-    text-align: center;
+    text-align: left;
   }
   .greeting-main {
     display: block;

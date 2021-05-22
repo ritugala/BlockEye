@@ -16,8 +16,8 @@ export default function Greeting(props) {
     <div className="greet-main" id="greeting">
       <div className="greeting-main">
         <div className="greeting-text-div">
-          <div style={{ whiteSpace: "nowrap" }}>
-            <div className="row">
+          <div>
+            <div className="greeting-logo-title">
               <Logo />
               <h1 className="greeting-text" style={{ color: theme.text }}>
                 {greeting.title}
