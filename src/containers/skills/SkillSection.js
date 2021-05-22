@@ -23,38 +23,42 @@ class SkillSection extends Component {
       <div>
         {skills.data.map((skill) => {
           return (
-            <div className="skills-main-div">
-              {/* <Fade left duration={2000}> */}
-              <div className="skills-image-div">
-                {/* <img
+            <>
+              <SoftwareSkill logos={skill.softwareSkills} />
+              <div className="skills-main-div">
+                {/* <Fade left duration={2000}> */}
+
+                <div className="skills-image-div" style={{ maxWidth: "33%" }}>
+                  {/* <img
                     alt="Ashutosh is Analysing Data"
                     src={require(`../../assests/images/${skill.imagePath}`)}
                   ></img> */}
-                <GetSkillSvg fileName={skill.fileName} theme={theme} />
-              </div>
-              {/* </Fade> */}
-
-              <div className="skills-text-div">
-                {/* <Fade right duration={1000}></Fade>
-                <Fade right duration={1500}> */}
-                <SoftwareSkill logos={skill.softwareSkills} />
-                {/* </Fade>
-                <Fade right duration={2000}> */}
-                <div>
-                  {skill.skills.map((skillSentence) => {
-                    return (
-                      <p
-                        className="subTitle skills-text"
-                        style={{ color: theme.secondaryText }}
-                      >
-                        {skillSentence}
-                      </p>
-                    );
-                  })}
+                  <GetSkillSvg fileName={skill.fileName} theme={theme} />
                 </div>
                 {/* </Fade> */}
+
+                <div className="skills-text-div">
+                  {/* <Fade right duration={1000}></Fade>
+                <Fade right duration={1500}> */}
+
+                  {/* </Fade>
+                <Fade right duration={2000}> */}
+                  <div>
+                    {skill.skills.map((skillSentence) => {
+                      return (
+                        <p
+                          className="subTitle skills-text"
+                          style={{ color: theme.secondaryText }}
+                        >
+                          {skillSentence}
+                        </p>
+                      );
+                    })}
+                  </div>
+                  {/* </Fade> */}
+                </div>
               </div>
-            </div>
+            </>
           );
         })}
       </div>
