@@ -29,7 +29,7 @@ export default function Greeting(props) {
               style={{
                 color: theme.secondaryText,
                 fontSize: "1.5em",
-                display: "inline-block",
+                display: "flex",
                 marginTop: "-10px",
               }}
             >
