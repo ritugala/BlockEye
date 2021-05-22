@@ -17,7 +17,8 @@
 
 .skills-text {
   font-size: 36px;
-  line-height: 1.5;
+  line-height: 2;
+  margin-right: 10%;
 }
 
 .skills-text-div {
@@ -75,6 +76,7 @@
   }
   .skills-text {
     font-size: 16px;
+    line-height: normal;
   }
   .skills-text-subtitle {
     font-size: 16px;
