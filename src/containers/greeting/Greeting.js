@@ -35,7 +35,6 @@ export default function Greeting(props) {
             >
               {greeting.subTitle}
             </p>
-            <SocialMedia theme={theme} />
 
             {/* <div className="button-greeting-div">
               <Button text="Contact me" href="#contact" />

@@ -3,6 +3,7 @@ import "./Footer.css";
 import { Fade } from "react-reveal";
 import { greeting } from "../../portfolio.js";
 import image from "./Blockeye-Cropped.png";
+import SocialMedia from "../socialMedia/SocialMedia";
 /* eslint-disable jsx-a11y/accessible-emoji */
 
 export default function Footer(props) {
@@ -14,27 +15,30 @@ export default function Footer(props) {
         className="footer-text left"
         style={{ color: props.theme.secondaryText }}
       >
-        <div className="row" style={{ textAlign: "left" }}>
-          <img src={image} width="25%" height="25%"></img>
+        <div className="footer-logo">
+          <img src={image} width="22%" height="10%"></img>
         </div>
-        <div className="row">© 2021 BlockEye, all rights reserved</div>
+        <p style={{ marginTop: "5%" }}>© 2021 BlockEye, all rights reserved</p>
       </div>
       <div
         className="footer-text right"
-        style={{ color: props.theme.secondaryText, paddingTop: "70px" }}
+        style={{ color: props.theme.secondaryText }}
       >
-        <a href="#" className="spacing">
-          Home
-        </a>
-        <a href="#" className="spacing">
-          About Us
-        </a>
-        <a href="#" className="spacing">
-          FAQs
-        </a>
-        <a href="#" className="spacing">
-          Contact
-        </a>
+        <SocialMedia theme={props.theme} />
+        <div className="footer-nav">
+          <a href="#" className="spacing">
+            Home
+          </a>
+          <a href="#" className="spacing">
+            About Us
+          </a>
+          <a href="#" className="spacing">
+            FAQs
+          </a>
+          <a href="#" className="spacing">
+            Contact
+          </a>
+        </div>
       </div>
       {/* <ToggleSwitch theme={props.theme} onToggle={props.onToggle}/> */}
       {/* </Fade> */}

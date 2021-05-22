@@ -7,7 +7,6 @@
   padding-left: 80px;
   padding-right: 80px;
   padding-bottom: 40px;
-  margin-bottom: 20px;
 }
 
 .footer-div {
@@ -34,4 +33,12 @@
 a {
   text-decoration: none;
   color: #868e96;
+}
+
+.footer-nav {
+  margin-top: 20%;
+}
+
+.footer-logo {
+  text-align: left;
 }
