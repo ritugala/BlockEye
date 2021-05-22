@@ -86,14 +86,6 @@ const skills = {
           },
         },
         {
-          skillName: "Keras",
-          fontAwesomeClassname: "simple-icons:keras",
-          style: {
-            backgroundColor: "white",
-            color: "#D00000",
-          },
-        },
-        {
           skillName: "PyTorch",
           fontAwesomeClassname: "logos-pytorch",
           style: {
@@ -109,13 +101,6 @@ const skills = {
           },
         },
         {
-          skillName: "Ethereum",
-          fontAwesomeClassname: "simple-icons:ethereum",
-          style: {
-            color: "black",
-          },
-        },
-        {
           skillName: "Bitcoin",
           fontAwesomeClassname: "simple-icons:bitcoinsv",
           style: {
@@ -128,6 +113,25 @@ const skills = {
           style: {
             color: "#a9a9a9",
           },
+        },
+        {
+          skillName: "Kubernetes",
+          fontAwesomeClassname: "simple-icons:kubernetes",
+          style: {
+            color: "#326ce5",
+          },
+        },
+        {
+          skillName: "Jupyter Lab",
+          fontAwesomeClassname: "logos:jupyter",
+        },
+        {
+          skillName: "Amazon Web Services",
+          fontAwesomeClassname: "logos:aws",
+        },
+        {
+          skillName: "Docker",
+          fontAwesomeClassname: "logos:docker-icon",
         },
       ],
     },
