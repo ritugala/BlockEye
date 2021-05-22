@@ -6,9 +6,9 @@ export default class BlockchainImg extends Component {
     return (
       <img
         src={image}
-        width="498.75"
-        height="432.37039"
-        style={{ display: "block", margin: "auto" }}
+        //        width="498.75"
+        //        height="432.37039"
+        style={{ marginTop: "auto" }}
       ></img>
     );
   }
