@@ -28,7 +28,7 @@ export default function Greeting(props) {
               className="greeting-text-p subTitle"
               style={{
                 color: theme.secondaryText,
-                fontSize: "1.5em",
+                fontSize: "1.3em",
                 display: "flex",
                 marginTop: "-10px",
               }}

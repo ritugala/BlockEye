@@ -28,7 +28,10 @@ class SkillSection extends Component {
               <div className="skills-main-div">
                 {/* <Fade left duration={2000}> */}
 
-                <div className="skills-image-div" style={{ maxWidth: "33%" }}>
+                <div
+                  className="skills-image-div"
+                  style={{ maxWidth: "33%", margin: "auto" }}
+                >
                   {/* <img
                     alt="Ashutosh is Analysing Data"
                     src={require(`../../assests/images/${skill.imagePath}`)}
