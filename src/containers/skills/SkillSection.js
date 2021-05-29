@@ -24,7 +24,7 @@ class SkillSection extends Component {
         {skills.data.map((skill) => {
           return (
             <>
-              <SoftwareSkill logos={skill.softwareSkills} />
+              {/* <SoftwareSkill logos={skill.softwareSkills} /> */}
               <div className="skills-main-div">
                 {/* <Fade left duration={2000}> */}
 

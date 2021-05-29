@@ -8,6 +8,8 @@ import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
 import Logo from "../../components/header/Logo";
 import FirstImage from "./FirstImage";
+import { skills } from "../../portfolio";
+import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -35,6 +37,10 @@ export default function Greeting(props) {
             >
               {greeting.subTitle}
             </p>
+
+            {skills.data.map((skill) => {
+              return <SoftwareSkill logos={skill.softwareSkills} />;
+            })}
           </div>
         </div>
         <div className="greeting-image-div">
