@@ -35,11 +35,6 @@ export default function Greeting(props) {
             >
               {greeting.subTitle}
             </p>
-
-            {/* <div className="button-greeting-div">
-              <Button text="Contact me" href="#contact" />
-              <Button text="See my resume" newTab={true} href={greeting.resumeLink} />
-            </div> */}
           </div>
         </div>
         <div className="greeting-image-div">

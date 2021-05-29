@@ -84,6 +84,7 @@ const skills = {
           style: {
             backgroundColor: "transparent",
           },
+          link: "https://www.tensorflow.org/",
         },
         {
           skillName: "PyTorch",
@@ -91,6 +92,7 @@ const skills = {
           style: {
             backgroundColor: "transparent",
           },
+          link: "https://pytorch.org/",
         },
         {
           skillName: "Python",
@@ -99,6 +101,12 @@ const skills = {
             backgroundColor: "transparent",
             color: "#3776AB",
           },
+          link: "https://www.python.org/",
+        },
+        {
+          skillName: "Jupyter Lab",
+          fontAwesomeClassname: "logos:jupyter",
+          link: "https://jupyter.org/",
         },
         {
           skillName: "Bitcoin",
@@ -106,6 +114,7 @@ const skills = {
           style: {
             color: "#f2a900",
           },
+          link: "https://bitcoin.org/en/",
         },
         {
           skillName: "Solidity",
@@ -113,6 +122,12 @@ const skills = {
           style: {
             color: "#a9a9a9",
           },
+          link: "https://docs.soliditylang.org/en/v0.8.4/",
+        },
+        {
+          skillName: "Amazon Web Services",
+          fontAwesomeClassname: "logos:aws",
+          link: "https://aws.amazon.com/",
         },
         {
           skillName: "Kubernetes",
@@ -120,18 +135,12 @@ const skills = {
           style: {
             color: "#326ce5",
           },
-        },
-        {
-          skillName: "Jupyter Lab",
-          fontAwesomeClassname: "logos:jupyter",
-        },
-        {
-          skillName: "Amazon Web Services",
-          fontAwesomeClassname: "logos:aws",
+          link: "https://kubernetes.io/",
         },
         {
           skillName: "Docker",
           fontAwesomeClassname: "logos:docker-icon",
+          link: "https://www.docker.com/",
         },
       ],
     },
