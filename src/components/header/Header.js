@@ -42,7 +42,7 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Tab1
+                  Home
                 </NavLink>
               </li>
               <li>

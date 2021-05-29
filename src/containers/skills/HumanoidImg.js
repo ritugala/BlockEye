@@ -9,9 +9,9 @@ export default class HumanoidImg extends Component {
       <img
         src={image}
         style={{
-          maxWidth: "50%",
+          maxWidth: "40%",
           marginTop: "auto",
-          marginLeft: "10%",
+          marginLeft: "20%",
         }}
       ></img>
     );
