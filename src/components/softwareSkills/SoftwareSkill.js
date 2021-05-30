@@ -7,10 +7,7 @@ class SoftwareSkill extends React.Component {
     return (
       <div>
         <div className="software-skills-main-div">
-          <ul
-            className="dev-icons"
-            style={{ textAlign: "left", fontSize: "2rem" }}
-          >
+          <ul className="dev-icons" style={{ textAlign: "left" }}>
             {/* {skillsSection.softwareSkills.map(skills => {
             return (
               <li className="software-skill-inline" name={skills.skillName}>

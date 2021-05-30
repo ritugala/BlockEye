@@ -1,4 +1,4 @@
-
+#run: npm run build
 cd build
 git remote remove origin
 git init
