@@ -46,11 +46,26 @@ a {
 /* Media Query */
 @media (max-width: 1380px) {
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .footer-logo {
     text-align: center;
   }
   .right {
-    width: 127%;
+    width: 100%;
+    float: none;
+  }
+  .left {
+    float: none;
+  }
+  .footer-nav {
+    margin-top: auto;
+  }
+  .footer-text {
+    text-align: center;
+    /* color: #868e96; */
+    font-weight: bold;
+    font-family: "Google Sans Regular";
+    display: block;
+    padding: 12px 0px;
   }
 }

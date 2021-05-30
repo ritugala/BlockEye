@@ -64,8 +64,9 @@
 } */
 
 /* Media Query */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .social-media-div {
     text-align: center;
+    float: none;
   }
 }
