@@ -8,7 +8,7 @@ import SocialMedia from "../socialMedia/SocialMedia";
 
 export default function Footer(props) {
   return (
-    <div className=" container footer-div">
+    <div className=" container footer-div" style={{ maxWidth: "100%" }}>
       {/* <Fade> */}
       <hr className="footer-line" />
       <div
