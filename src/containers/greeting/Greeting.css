@@ -47,8 +47,11 @@ h1.greeting-text {
 }
 
 .greeting-text-p {
-  margin-right: 40px;
   font-family: "Google Sans Medium";
+  margin-top: -10px;
+  display: flex;
+
+  max-width: inherit !important;
 }
 
 .greeting-image-div > * {
@@ -68,7 +71,7 @@ h1.greeting-text {
   }
 
   .greeting-text-p {
-    font-size: 13px;
+    /*font-size: 13px;*/
   }
 }
 @media (max-width: 768px) {
@@ -88,7 +91,7 @@ h1.greeting-text {
     text-align: center;
   }
   .greeting-text-p {
-    font-size: 11px;
+    /*font-size: 11px;*/
     margin-right: 0px;
     line-height: normal;
     text-align: left;
@@ -103,29 +106,32 @@ h1.greeting-text {
     justify-content: center;
   }
 }
+
+/*
 @media (min-width: 1380px) {
   .greeting-text-p {
     font-size: 17px;
   }
 }
-/*Use if reqd
-@media all and (min-width: 50px)   {  body  { font-size:0.1em;  } }
-@media all and (min-width: 100px)  {  body  { font-size:0.2em;  } }
-@media all and (min-width: 200px)  {  body  { font-size:0.4em;  } }
-@media all and (min-width: 300px)  {  body  { font-size:0.6em;  } }
-@media all and (min-width: 400px)  {  body  { font-size:0.8em;  } }
-@media all and (min-width: 500px)  {  body  { font-size:1.0em;  } }
-@media all and (min-width: 600px)  {  body  { font-size:1.2em;  } }
-@media all and (min-width: 700px)  {  body  { font-size:1.4em;  } }
-@media all and (min-width: 800px)  {  body  { font-size:1.6em;  } }
-@media all and (min-width: 900px)  {  body  { font-size:1.8em;  } }
-@media all and (min-width: 1000px) {  body  { font-size:2.0em;  } }
-@media all and (min-width: 1100px) {  body  { font-size:2.2em;  } }
-@media all and (min-width: 1200px) {  body  { font-size:2.4em;  } }
-@media all and (min-width: 1300px) {  body  { font-size:2.6em;  } }
-@media all and (min-width: 1400px) {  body  { font-size:2.8em;  } }
-@media all and (min-width: 1500px) {  body  { font-size:3.0em;  } }
-@media all and (min-width: 1500px) {  body  { font-size:3.2em;  } }
-@media all and (min-width: 1600px) {  body  { font-size:3.4em;  } }
-@media all and (min-width: 1700px) {  body  { font-size:3.6em;  } }
- */
+
+@media  (min-width: 50px)   {  .greeting-text-p  { font-size:0.05em;  } }
+@media  (min-width: 100px)  {  .greeting-text-p  { font-size:0.1em;  } }
+@media  (min-width: 200px)  {  .greeting-text-p  { font-size:0.2em;  } }
+@media  (min-width: 300px)  {  .greeting-text-p  { font-size:0.3em;  } }
+@media  (min-width: 400px)  {  .greeting-text-p  { font-size:0.4em;  } }
+@media  (min-width: 500px)  {  .greeting-text-p  { font-size:0.5em;  } }
+@media  (min-width: 600px)  {  .greeting-text-p  { font-size:0.6em;  } }
+@media  (min-width: 700px)  {  .greeting-text-p  { font-size:0.7em;  } }
+@media  (min-width: 800px)  {  .greeting-text-p  { font-size:0.8em;  } }
+@media  (min-width: 900px)  {  .greeting-text-p  { font-size:0.9em;  } }
+@media  (min-width: 1000px) {  .greeting-text-p  { font-size:1.0em;  } }
+@media  (min-width: 1100px) {  .greeting-text-p  { font-size:1.1em;  } }
+@media  (min-width: 1200px) {  .greeting-text-p  { font-size:1.2em;  } }
+@media  (min-width: 1300px) {  .greeting-text-p  { font-size:1.3em;  } }
+@media  (min-width: 1400px) {  .greeting-text-p  { font-size:1.4em;  } }
+@media  (min-width: 1500px) {  .greeting-text-p  { font-size:1.5em;  } }
+@media  (min-width: 1500px) {  .greeting-text-p  { font-size:1.6em;  } }
+@media  (min-width: 1600px) {  .greeting-text-p  { font-size:1.7em;  } }
+@media  (min-width: 1700px) {  .greeting-text-p  { font-size:1.8em;  } }
+
+*/
