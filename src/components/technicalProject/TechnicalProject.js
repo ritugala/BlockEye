@@ -4,6 +4,7 @@ import { technicalProjectsHeader } from "../../portfolio.js";
 import TechnicalImg from "./TechnicalImg";
 import agri_image from "./AgriChain.png";
 import temp_image from "./temp.jpg";
+import ct_image from "./CT_img.png";
 
 function DisplayAdditionalInfo(props) {
   if (props.project === "Campus Blockchain") {
@@ -21,6 +22,8 @@ function DisplayAdditionalInfo(props) {
 function GetImage(props) {
   if (props.project === "Agrichain") {
     return <TechnicalImg image={agri_image} />;
+  } else if (props.project === "CoinTracker") {
+    return <TechnicalImg image={ct_image} />;
   }
   return <TechnicalImg image={temp_image} />;
 }
