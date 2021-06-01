@@ -48,7 +48,8 @@ class Header extends Component {
     //    return null;
 
     return (
-      <Fade top duration={1000} distance="20px">
+      // <Fade top duration={1000} distance="20px">
+      <>
         <SeoHeader />
         <div>
           <header className="header">
@@ -69,7 +70,7 @@ class Header extends Component {
 
                   <NavDropdown
                     title="Projects"
-                    href="#projects"
+                    href="/projects"
                     onMouseEnter={(event) => {
                       onMouseEnter(event, theme.highlight);
                       this.onMouseEnter();
@@ -82,7 +83,7 @@ class Header extends Component {
                     show={this.state.showMenu}
                   >
                     <NavDropdown.Item
-                      href="/home"
+                      href="/cointracker"
                       style={{ color: theme.secondaryText }}
                       onMouseEnter={(event) =>
                         onMouseEnter(event, theme.highlight)
@@ -93,7 +94,7 @@ class Header extends Component {
                     </NavDropdown.Item>
 
                     <NavDropdown.Item
-                      href="/home"
+                      href="/campusblockchain"
                       style={{ color: theme.secondaryText }}
                       onMouseEnter={(event) =>
                         onMouseEnter(event, theme.highlight)
@@ -104,7 +105,7 @@ class Header extends Component {
                     </NavDropdown.Item>
 
                     <NavDropdown.Item
-                      href="/home"
+                      href="/agrichain"
                       style={{ color: theme.secondaryText }}
                       onMouseEnter={(event) =>
                         onMouseEnter(event, theme.highlight)
@@ -113,8 +114,6 @@ class Header extends Component {
                     >
                       AgriChain
                     </NavDropdown.Item>
-                    {/* <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>  */}
                   </NavDropdown>
 
                   <Nav.Link
@@ -125,7 +124,7 @@ class Header extends Component {
                     }
                     onMouseOut={(event) => onMouseOut(event)}
                   >
-                    FAQs
+                    Our Team
                   </Nav.Link>
 
                   <Nav.Link
@@ -164,7 +163,6 @@ class Header extends Component {
                   Home
                 </NavLink>
               </li>
-
               <li>
                 <NavLink
                   to="#"
@@ -174,7 +172,19 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Tab3
+                  Projects
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/agrichain"
+                  tag={Link}
+                  activeStyle={{ fontWeight: "bold" }}
+                  style={{ color: theme.text }}
+                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
+                  onMouseOut={(event) => onMouseOut(event)}
+                >
+                  Agrichain
                 </NavLink>
               </li>
               <li>
@@ -186,13 +196,14 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Tab4
+                  Contact Us
                 </NavLink>
               </li>
             </ul>
           </header>  */}
         </div>
-      </Fade>
+      </>
+      // </Fade>
     );
   }
 }

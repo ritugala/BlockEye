@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import { Route, Switch, HashRouter, BrowserRouter } from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
-import Splash from "../pages/splash/Splash";
-import Education from "../pages/education/EducationComponent";
-import Experience from "../pages/experience/Experience";
-import Opensource from "../pages/opensource/Opensource";
-import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
+import Splash from "../pages/splash/Splash";
+import Agrichain from "../pages/allProjects/Agrichain";
+import CampusBlockchain from "../pages/allProjects/CampusBlockchain";
+import CoinTracker from "../pages/allProjects/CoinTracker";
 import { settings } from "../portfolio.js";
 
 export default class Main extends Component {
@@ -30,33 +29,28 @@ export default class Main extends Component {
                 render={(props) => <Home {...props} theme={this.props.theme} />}
               />
               <Route
-                path="/aboutUs"
-                render={(props) => <Home {...props} theme={this.props.theme} />}
-              />
-              {/* <Route
-                path="/education"
-                render={(props) => <Home {...props} theme={this.props.theme} />}
-              />
-              <Route
-                path="/opensource"
+                path="/projects"
                 render={(props) => (
-                  <Opensource {...props} theme={this.props.theme} />
+                  <Projects {...props} theme={this.props.theme} />
                 )}
-              /> */}
-              <Route
-                path="/contact"
-                render={(props) => <Home {...props} theme={this.props.theme} />}
               />
               <Route
-                path="/splash"
+                path="/agrichain"
                 render={(props) => (
-                  <Splash {...props} theme={this.props.theme} />
+                  <Agrichain {...props} theme={this.props.theme} />
+                )}
+              />
+              <Route
+                path="/campusblockchain"
+                render={(props) => (
+                  <CampusBlockchain {...props} theme={this.props.theme} />
                 )}
               />
               <Route
                 path="/projects"
+                path="/cointracker"
                 render={(props) => (
-                  <Projects {...props} theme={this.props.theme} />
+                  <CoinTracker {...props} theme={this.props.theme} />
                 )}
               />
               <Route
@@ -81,42 +75,6 @@ export default class Main extends Component {
                 path="/home"
                 render={(props) => <Home {...props} theme={this.props.theme} />}
               />
-              {/* <Route
-                path="/experience"
-                exact
-                render={(props) => (
-                  <Experience {...props} theme={this.props.theme} />
-                )}
-              />
-              <Route
-                path="/education"
-                render={(props) => (
-                  <Education {...props} theme={this.props.theme} />
-                )}
-              />
-              <Route
-                path="/opensource"
-                render={(props) => (
-                  <Opensource {...props} theme={this.props.theme} />
-                )}
-              /> */}
-              <Route
-                path="/AboutUs"
-                render={(props) => <Home {...props} theme={this.props.theme} />}
-              />
-              <Route
-                path="/contact"
-                render={(props) => <Home {...props} theme={this.props.theme} />}
-              />
-              {/* <Route
-							path="/splash"
-							render={(props) => (
-								<Splash
-									{...props}
-									theme={this.props.theme}
-								/>
-							)}
-              />*/}
               <Route
                 path="/projects"
                 render={(props) => (
@@ -124,8 +82,26 @@ export default class Main extends Component {
                 )}
               />
               <Route
-                path="/faqs"
+                path="/agrichain"
+                render={(props) => (
+                  <Agrichain {...props} theme={this.props.theme} />
+                )}
+              />
+              <Route
+                path="/campusblockchain"
+                render={(props) => (
+                  <CampusBlockchain {...props} theme={this.props.theme} />
+                )}
+              />
+              <Route
+                path="/contact"
                 render={(props) => <Home {...props} theme={this.props.theme} />}
+              />
+              <Route
+                path="/cointracker"
+                render={(props) => (
+                  <CoinTracker {...props} theme={this.props.theme} />
+                )}
               />
             </Switch>
           </BrowserRouter>

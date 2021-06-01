@@ -26,16 +26,16 @@ export default function Footer(props) {
       >
         <SocialMedia theme={props.theme} />
         <div className="footer-nav">
-          <a href="#" className="spacing">
+          <a href="/home" className="spacing">
             Home
           </a>
-          <a href="#" className="spacing">
-            About Us
+          <a href="/projects" className="spacing">
+            Projects
           </a>
-          <a href="#" className="spacing">
-            FAQs
+          <a href="/" className="spacing">
+            Our Team
           </a>
-          <a href="#" className="spacing">
+          <a href="/" className="spacing">
             Contact
           </a>
         </div>

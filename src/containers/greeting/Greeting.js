@@ -17,9 +17,9 @@ function changeFontSize() {
   var p_size = document.getElementsByClassName("greeting-logo-title")[0]
     .offsetWidth;
   document.getElementsByClassName("greeting-text-p")[0].style.fontSize =
-    (p_size * 1.0) / 500 + "em";
+    (p_size * 1.5) / 500 + "em";
   document.getElementsByClassName("dev-icons")[0].style.fontSize =
-    (p_size * 2.1) / 500 + "em";
+    (p_size * 2.5) / 500 + "em";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
