@@ -30,13 +30,13 @@ export default function Footer(props) {
             Home
           </a>
           <a href="#" className="spacing">
-            About Us
+            Our Team
           </a>
           <a href="#" className="spacing">
-            FAQs
+            Projects
           </a>
           <a href="#" className="spacing">
-            Contact
+            Contact Us
           </a>
         </div>
       </div>

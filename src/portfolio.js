@@ -545,6 +545,37 @@ const contactPageData = {
   },
 };
 
+const Agrichain_info = {
+  header: "Agrichain",
+  description: [
+    "AgriChain is a blockchain-based end-to-end supply chain management platform for perishable items like fruits and vegetables.",
+    " This platform helps stakeholders in understanding the flow of produce thereby increasing the operational efficiency of supply chain processes.",
+    " AgriChain provides origin traceability of products, giving end-consumers the ability to ascertain the safety and quality of purchased food items.",
+  ],
+};
+
+const CampusBlockchain_info = {
+  header: "Campus Blockchain",
+  description: [
+    "We have developed framework (and code) for Campus blockchain (for Academic and Corporate campuses). It uses Proof of Authority and is written in Python from scratch.",
+    " It was developed to research scalability and infrastructure of blockchains. It supports token transfers and is backed by fiat currency.",
+    "Due to its open source nature and access via API, it allows students and tinkerers to build their own applications on top of the blockchain. Example is a VJTI Campus Blockchain (used for Campus Cafeteria services – released on 5 March 2019 at International Workshop on Blockchain for Global Good). The Explorer and dashboard are live and one can view all transactions in real time.",
+  ],
+  explorerLink: "https://explore.vjti-bct.in",
+  androidApp:
+    "There is an Android app deployed to the play store, which acts as a light node and can be used to send and receive VJ coins.",
+  androidAppLink:
+    "https://play.google.com/store/apps/details?id=com.vjti.blockchain.wallet",
+};
+
+const CoinTracker_info = {
+  header: "CoinTracker",
+  description: [
+    "We propose a CoinTracker: a blockchain analysis tool useful for inspecting a given blockchain to discover the legality of transactions/coins for defined jurisdictions.",
+    " As a tool for crypto asset audit with “legitimate law enforcement purposes”, it will help governments to combat crypto regulations and supervision mechanisms from “zero” to “overly restrictive” (or “liberal”) to ““somewhat restrictive” (or “somewhat liberal”) as required.",
+  ],
+};
+
 export {
   settings,
   seo,
@@ -557,4 +588,7 @@ export {
   experience,
   projectsHeader,
   contactPageData,
+  Agrichain_info,
+  CampusBlockchain_info,
+  CoinTracker_info,
 };

@@ -54,7 +54,7 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Tab2
+                  Our Team
                 </NavLink>
               </li>
               <li>
@@ -66,7 +66,19 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Tab3
+                  Projects
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/agrichain"
+                  tag={Link}
+                  activeStyle={{ fontWeight: "bold" }}
+                  style={{ color: theme.text }}
+                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
+                  onMouseOut={(event) => onMouseOut(event)}
+                >
+                  Agrichain
                 </NavLink>
               </li>
               <li>
@@ -78,7 +90,7 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Tab4
+                  Contact Us
                 </NavLink>
               </li>
             </ul>
