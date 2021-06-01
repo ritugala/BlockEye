@@ -67,7 +67,7 @@ export default class Main extends Component {
           <BrowserRouter basename="/">
             <Switch>
               <Route
-                path="/"
+                path={process.env.PUBLIC_URL + "/"}
                 exact
                 render={(props) => <Home {...props} theme={this.props.theme} />}
               />
