@@ -16,7 +16,7 @@ export default function GithubRepoCard({ repo, theme }) {
         className="repo-card-div"
         key={repo.id}
         onClick={() => {
-          window.location.href = process.env.PUBLIC_URL + repo.url;
+          window.location.href = repo.url;
         }}
         style={{ backgroundColor: theme.highlight }}
       >
