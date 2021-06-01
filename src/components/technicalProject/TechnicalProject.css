@@ -16,16 +16,17 @@
   flex: 1;
 }
 
-.projects-heading-text-div {
+.projects-heading-text-div-new {
   text-align: center;
 }
 
-.projects-heading-text {
+.projects-heading-text-new {
   font-size: 56px;
   font-weight: 400;
   font-family: "Google Sans Medium";
   line-height: 1.1;
   text-align: center;
+  margin: 5%;
 }
 
 .projects-header-detail-text {
@@ -56,7 +57,7 @@ a {
 }
 
 @media (max-width: 1380px) {
-  .projects-heading-text {
+  .projects-heading-text-new {
     font-size: 50px;
   }
   .projects-heading-sub-text {
@@ -65,7 +66,7 @@ a {
 }
 
 @media (max-width: 768px) {
-  .projects-heading-text {
+  .projects-heading-text-new {
     font-size: 30px;
     margin-top: 20px;
   }

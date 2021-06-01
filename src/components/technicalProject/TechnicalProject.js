@@ -34,8 +34,8 @@ class TechnicalProject extends Component {
       <div className="projects-main">
         <div className="basic-projects">
           <div className="projects-heading-div">
-            <div className="projects-heading-text-div">
-              <h1 className="projects-heading-text">{this.props.header}</h1>
+            <div className="projects-heading-text-div-new">
+              <h1 className="projects-heading-text-new">{this.props.header}</h1>
               <div className="projects-header-detail-text subTitle">
                 <div class="img-div">
                   <GetImage project={this.props.header} />
