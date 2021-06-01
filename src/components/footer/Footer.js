@@ -8,7 +8,7 @@ import SocialMedia from "../socialMedia/SocialMedia";
 
 export default function Footer(props) {
   return (
-    <div className=" container footer-div">
+    <div className=" container footer-div" style={{ maxWidth: "100%" }}>
       {/* <Fade> */}
       <hr className="footer-line" />
       <div
@@ -26,17 +26,17 @@ export default function Footer(props) {
       >
         <SocialMedia theme={props.theme} />
         <div className="footer-nav">
-          <a href="#" className="spacing">
+          <a href="/home" className="spacing">
             Home
           </a>
-          <a href="#" className="spacing">
-            Our Team
-          </a>
-          <a href="#" className="spacing">
+          <a href="/projects" className="spacing">
             Projects
           </a>
-          <a href="#" className="spacing">
-            Contact Us
+          <a href="/" className="spacing">
+            Our Team
+          </a>
+          <a href="/" className="spacing">
+            Contact
           </a>
         </div>
       </div>
