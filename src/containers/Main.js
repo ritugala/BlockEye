@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch, HashRouter, BrowserRouter } from "react-router-dom";
+import { Route, Switch, HashRouter } from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
 import Projects from "../pages/projects/Projects";
 import Splash from "../pages/splash/Splash";
@@ -15,14 +15,12 @@ export default class Main extends Component {
     if (settings.isSplash) {
       return (
         <div>
-          <BrowserRouter basename="/">
+          <HashRouter basename="/">
             <Switch>
               <Route
                 path="/"
                 exact
-                render={(props) => (
-                  <Splash {...props} theme={this.props.theme} />
-                )}
+                render={(props) => <Home {...props} theme={this.props.theme} />}
               />
               <Route
                 path="/home"
@@ -35,9 +33,9 @@ export default class Main extends Component {
                 )}
               />
               <Route
-                path="/agrichain"
+                path="/cointracker"
                 render={(props) => (
-                  <Agrichain {...props} theme={this.props.theme} />
+                  <CoinTracker {...props} theme={this.props.theme} />
                 )}
               />
               <Route
@@ -47,27 +45,22 @@ export default class Main extends Component {
                 )}
               />
               <Route
-                path="/projects"
-                path="/cointracker"
+                path="/agrichain"
                 render={(props) => (
-                  <CoinTracker {...props} theme={this.props.theme} />
+                  <Agrichain {...props} theme={this.props.theme} />
                 )}
               />
-              <Route
-                path="/faqs"
-                render={(props) => <Home {...props} theme={this.props.theme} />}
-              />
             </Switch>
-          </BrowserRouter>
+          </HashRouter>
         </div>
       );
     } else {
       return (
         <div>
-          <BrowserRouter basename="/">
+          <HashRouter basename="/">
             <Switch>
               <Route
-                path={process.env.PUBLIC_URL + "/"}
+                path="/"
                 exact
                 render={(props) => <Home {...props} theme={this.props.theme} />}
               />
@@ -82,9 +75,9 @@ export default class Main extends Component {
                 )}
               />
               <Route
-                path="/agrichain"
+                path="/cointracker"
                 render={(props) => (
-                  <Agrichain {...props} theme={this.props.theme} />
+                  <CoinTracker {...props} theme={this.props.theme} />
                 )}
               />
               <Route
@@ -94,17 +87,13 @@ export default class Main extends Component {
                 )}
               />
               <Route
-                path="/contact"
-                render={(props) => <Home {...props} theme={this.props.theme} />}
-              />
-              <Route
-                path="/cointracker"
+                path="/agrichain"
                 render={(props) => (
-                  <CoinTracker {...props} theme={this.props.theme} />
+                  <Agrichain {...props} theme={this.props.theme} />
                 )}
               />
             </Switch>
-          </BrowserRouter>
+          </HashRouter>
         </div>
       );
     }
