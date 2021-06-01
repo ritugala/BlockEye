@@ -1,6 +1,7 @@
 .projects-main {
-  width: 100%;
+  width: 100vw;
   text-align: center;
+  display: block;
 }
 
 .basic-projects {
@@ -23,6 +24,7 @@
 
 .projects-heading-text-div {
   text-align: center;
+  margin-top: 5%;
 }
 
 .projects-heading-img-div > * {

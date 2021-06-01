@@ -8,12 +8,18 @@
   justify-content: flex-end !important;
 }
 
-.nav-link {
+.header .nav-link {
   color: rgb(0, 28, 85) !important;
   font-weight: "bold" !important;
   font-family: "Google Sans Medium" !important;
   padding: 12px !important;
 }
+
+#projects-toggle {
+  text-decoration: none;
+  color: rgb(0, 28, 85) !important ;
+}
+
 .header ul {
   margin: 0;
   padding: 0;

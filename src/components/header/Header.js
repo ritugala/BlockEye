@@ -27,11 +27,26 @@ const onMouseOut = (event) => {
 };
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { showMenu: false };
+  }
+  onMouseEnter() {
+    this.setState({ showMenu: true });
+  }
+
+  onMouseLeave() {
+    setTimeout(() => {
+      this.setState({ showMenu: false });
+    }, 500);
+  }
+
   render() {
     const theme = this.props.theme;
     console.log(theme);
     const link = settings.isSplash ? "/splash" : "home";
     //    return null;
+
     return (
       <Fade top duration={1000} distance="20px">
         <SeoHeader />
@@ -42,7 +57,7 @@ class Header extends Component {
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                   <Nav.Link
-                    href="#home"
+                    href="/home"
                     activeStyle={{ fontWeight: "bold" }}
                     onMouseEnter={(event) =>
                       onMouseEnter(event, theme.highlight)
@@ -54,15 +69,20 @@ class Header extends Component {
 
                   <NavDropdown
                     title="Projects"
-                    id="basic-nav-dropdown"
-                    activeStyle={{ fontWeight: "bold" }}
-                    onMouseEnter={(event) =>
-                      onMouseEnter(event, theme.highlight)
-                    }
+                    href="#projects"
+                    onMouseEnter={(event) => {
+                      onMouseEnter(event, theme.highlight);
+                      this.onMouseEnter();
+                    }}
                     onMouseOut={(event) => onMouseOut(event)}
+                    onMouseLeave={() => this.onMouseLeave()}
+                    onClick={() => {
+                      window.location.href = "/projects";
+                    }}
+                    show={this.state.showMenu}
                   >
                     <NavDropdown.Item
-                      href="#"
+                      href="/home"
                       style={{ color: theme.secondaryText }}
                       onMouseEnter={(event) =>
                         onMouseEnter(event, theme.highlight)
@@ -73,7 +93,7 @@ class Header extends Component {
                     </NavDropdown.Item>
 
                     <NavDropdown.Item
-                      href="#"
+                      href="/home"
                       style={{ color: theme.secondaryText }}
                       onMouseEnter={(event) =>
                         onMouseEnter(event, theme.highlight)
@@ -84,7 +104,7 @@ class Header extends Component {
                     </NavDropdown.Item>
 
                     <NavDropdown.Item
-                      href="#"
+                      href="/home"
                       style={{ color: theme.secondaryText }}
                       onMouseEnter={(event) =>
                         onMouseEnter(event, theme.highlight)
@@ -98,7 +118,7 @@ class Header extends Component {
                   </NavDropdown>
 
                   <Nav.Link
-                    href="#link"
+                    href="/"
                     activeStyle={{ fontWeight: "bold" }}
                     onMouseEnter={(event) =>
                       onMouseEnter(event, theme.highlight)
@@ -109,7 +129,7 @@ class Header extends Component {
                   </Nav.Link>
 
                   <Nav.Link
-                    href="#link"
+                    href="/"
                     activeStyle={{ fontWeight: "bold" }}
                     onMouseEnter={(event) =>
                       onMouseEnter(event, theme.highlight)

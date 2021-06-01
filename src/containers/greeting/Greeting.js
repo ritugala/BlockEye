@@ -24,7 +24,8 @@ function changeFontSize() {
 
 document.addEventListener("DOMContentLoaded", () => {
   var greeting_logo = document.getElementsByClassName("greeting-logo-title")[0];
-  new ResizeObserver(changeFontSize).observe(greeting_logo);
+  if (greeting_logo && greeting_logo.offsetWidth != 0)
+    new ResizeObserver(changeFontSize).observe(greeting_logo);
 });
 
 export default function Greeting(props) {

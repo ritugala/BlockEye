@@ -53,12 +53,12 @@ export default class Main extends Component {
                   <Splash {...props} theme={this.props.theme} />
                 )}
               />
-              {/* <Route
+              <Route
                 path="/projects"
                 render={(props) => (
                   <Projects {...props} theme={this.props.theme} />
                 )}
-              /> */}
+              />
               <Route
                 path="/faqs"
                 render={(props) => <Home {...props} theme={this.props.theme} />}
@@ -116,13 +116,13 @@ export default class Main extends Component {
 									theme={this.props.theme}
 								/>
 							)}
-						/>
+              />*/}
               <Route
                 path="/projects"
                 render={(props) => (
                   <Projects {...props} theme={this.props.theme} />
                 )}
-              /> */}
+              />
               <Route
                 path="/faqs"
                 render={(props) => <Home {...props} theme={this.props.theme} />}

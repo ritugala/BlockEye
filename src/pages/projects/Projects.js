@@ -33,12 +33,12 @@ class Projects extends Component {
                 >
                   {projectsHeader.title}
                 </h1>
-                <p
+                {/* <p
                   className="projects-header-detail-text subTitle"
                   style={{ color: theme.secondaryText }}
                 >
                   {projectsHeader["description"]}
-                </p>
+                </p> */}
               </div>
             </div>
           </Fade>
@@ -48,13 +48,13 @@ class Projects extends Component {
             return <GithubRepoCard repo={repo} theme={theme} />;
           })}
         </div>
-        <Button
+        {/* <Button
           text={"More Projects"}
           className="project-button"
           href="https://github.com/ashutosh1919"
           newTab={true}
           theme={theme}
-        />
+        /> */}
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />
       </div>
