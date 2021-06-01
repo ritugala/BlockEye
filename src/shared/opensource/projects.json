@@ -3,19 +3,19 @@
     {
       "id": "CoinTracker",
       "name": "CoinTracker",
-      "url": "#",
+      "url": "/cointracker",
       "description": "A blockchain analysis tool useful for inspecting a given blockchain to discover the legality of transactions/coins for defined jurisdictions "
     },
     {
       "id": "Campus Blockchai",
       "name": "Campus Blockchain",
-      "url": "#",
+      "url": "/campusblockchain",
       "description": "A framework developed for Campus blockchain (for Academic and Corporate campuses). It was developed to research scalability and infrastructure of blockchains."
     },
     {
       "id": "AgriChain",
       "name": "AgriChain",
-      "url": "#",
+      "url": "/agrichain",
       "description": "A blockchain-based end-to-end supply chain management platform for perishable items like fruits and vegetables."
     }
   ]
