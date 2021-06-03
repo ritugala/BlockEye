@@ -13,7 +13,7 @@ const seo = {
   og: {
     title: "BlockEye",
     type: "website",
-    url: "https://blockeye.github.io/#/",
+    url: "https://blockeye.github.io/",
   },
 };
 

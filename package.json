@@ -7,7 +7,7 @@
   "homepage": "http://.",
   "repository": {
     "type": "git",
-    "url": "https://github.scom/ritugala/BlockEye.git"
+    "url": "https://github.com/BlockEye/BlockEye.github.io.git"
   },
   "version": "0.1.0",
   "main": "git_data_fetcher.js",

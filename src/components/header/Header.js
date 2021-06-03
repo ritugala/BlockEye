@@ -58,7 +58,7 @@ class Header extends Component {
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                   <Nav.Link
-                    href="/#/home"
+                    href="/home"
                     activeStyle={{ fontWeight: "bold" }}
                     onMouseEnter={(event) =>
                       onMouseEnter(event, theme.highlight)
@@ -70,7 +70,7 @@ class Header extends Component {
 
                   <NavDropdown
                     title="Projects"
-                    href="/#/projects"
+                    href="/projects"
                     onMouseEnter={(event) => {
                       onMouseEnter(event, theme.highlight);
                       this.onMouseEnter();
@@ -78,12 +78,12 @@ class Header extends Component {
                     onMouseOut={(event) => onMouseOut(event)}
                     onMouseLeave={() => this.onMouseLeave()}
                     onClick={() => {
-                      window.location.href = "/#/projects";
+                      window.location.href = "/projects";
                     }}
                     show={this.state.showMenu}
                   >
                     <NavDropdown.Item
-                      href="/#/cointracker"
+                      href="/cointracker"
                       style={{ color: theme.secondaryText }}
                       onMouseEnter={(event) =>
                         onMouseEnter(event, theme.highlight)
@@ -94,7 +94,7 @@ class Header extends Component {
                     </NavDropdown.Item>
 
                     <NavDropdown.Item
-                      href="/#/campusblockchain"
+                      href="/campusblockchain"
                       style={{ color: theme.secondaryText }}
                       onMouseEnter={(event) =>
                         onMouseEnter(event, theme.highlight)
@@ -105,7 +105,7 @@ class Header extends Component {
                     </NavDropdown.Item>
 
                     <NavDropdown.Item
-                      href="/#/agrichain"
+                      href="/agrichain"
                       style={{ color: theme.secondaryText }}
                       onMouseEnter={(event) =>
                         onMouseEnter(event, theme.highlight)
