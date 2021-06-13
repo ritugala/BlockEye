@@ -27,7 +27,7 @@ const onMouseOut = (event) => {
   el.style.backgroundColor = "transparent";
 };
 
-class Header extends Component {
+class HomepageHeader extends Component {
   constructor(props) {
     super(props);
     this.state = { showProjectMenu: false, showResearchMenu: false };
@@ -55,19 +55,6 @@ class Header extends Component {
         <div>
           <header className="header">
             <Navbar expand="lg">
-              <Navbar.Brand href="/home" className="nav-logo">
-                <img
-                  src={logo_img}
-                  height="40"
-                  style={{ marginTop: "-10px" }}
-                />
-                <span
-                  style={{ fontFamily: "Google Sans Bold", color: theme.text }}
-                >
-                  {" "}
-                  BlockEye
-                </span>
-              </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="">
@@ -202,4 +189,4 @@ class Header extends Component {
     );
   }
 }
-export default Header;
+export default HomepageHeader;
