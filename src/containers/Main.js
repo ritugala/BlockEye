@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
+import Foundation from "../pages/foundation/Foundation";
 import Projects from "../pages/projects/Projects";
 import Splash from "../pages/splash/Splash";
 import Agrichain from "../pages/allProjects/Agrichain";
@@ -25,6 +26,12 @@ export default class Main extends Component {
               <Route
                 path="/home"
                 render={(props) => <Home {...props} theme={this.props.theme} />}
+              />
+              <Route
+                path="/foundation"
+                render={(props) => (
+                  <Foundation {...props} theme={this.props.theme} />
+                )}
               />
               <Route
                 path="/projects"
@@ -67,6 +74,12 @@ export default class Main extends Component {
               <Route
                 path="/home"
                 render={(props) => <Home {...props} theme={this.props.theme} />}
+              />
+              <Route
+                path="/foundation"
+                render={(props) => (
+                  <Foundation {...props} theme={this.props.theme} />
+                )}
               />
               <Route
                 path="/projects"

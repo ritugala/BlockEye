@@ -29,8 +29,14 @@ export default function Footer(props) {
           <a href="/home" className="spacing">
             Home
           </a>
+          <a href="/foundation" className="spacing">
+            Foundation
+          </a>
           <a href="/projects" className="spacing">
             Projects
+          </a>
+          <a href="/" className="spacing">
+            Research
           </a>
           <a href="/" className="spacing">
             Our Team

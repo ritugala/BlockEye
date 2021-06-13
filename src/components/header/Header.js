@@ -29,17 +29,17 @@ const onMouseOut = (event) => {
 class Header extends Component {
   constructor(props) {
     super(props);
-    this.state = { showMenu: false };
+    this.state = { showProjectMenu: false, showResearchMenu: false };
   }
-  onMouseEnter() {
-    this.setState({ showMenu: true });
-  }
+  // onMouseEnter() {
+  //   this.setState({ showMenu: true });
+  // }
 
-  onMouseLeave() {
-    setTimeout(() => {
-      this.setState({ showMenu: false });
-    }, 500);
-  }
+  // onMouseLeave() {
+  //   setTimeout(() => {
+  //     this.setState({ showMenu: false });
+  //   }, 500);
+  // }
 
   render() {
     const theme = this.props.theme;
@@ -68,19 +68,32 @@ class Header extends Component {
                     Home
                   </Nav.Link>
 
+                  <Nav.Link
+                    href="/foundation"
+                    activeStyle={{ fontWeight: "bold" }}
+                    onMouseEnter={(event) =>
+                      onMouseEnter(event, theme.highlight)
+                    }
+                    onMouseOut={(event) => onMouseOut(event)}
+                  >
+                    Foundation
+                  </Nav.Link>
+
                   <NavDropdown
                     title="Projects"
                     href="/projects"
                     onMouseEnter={(event) => {
                       onMouseEnter(event, theme.highlight);
-                      this.onMouseEnter();
+                      this.setState({ showProjectMenu: true });
                     }}
                     onMouseOut={(event) => onMouseOut(event)}
-                    onMouseLeave={() => this.onMouseLeave()}
+                    onMouseLeave={() => {
+                      this.setState({ showProjectMenu: false });
+                    }}
                     onClick={() => {
                       window.location.href = "/projects";
                     }}
-                    show={this.state.showMenu}
+                    show={this.state.showProjectMenu}
                   >
                     <NavDropdown.Item
                       href="/cointracker"
@@ -113,6 +126,34 @@ class Header extends Component {
                       onMouseOut={(event) => onMouseOut(event)}
                     >
                       AgriChain
+                    </NavDropdown.Item>
+                  </NavDropdown>
+
+                  <NavDropdown
+                    title="Research"
+                    href="/"
+                    onMouseEnter={(event) => {
+                      onMouseEnter(event, theme.highlight);
+                      this.setState({ showResearchMenu: true });
+                    }}
+                    onMouseOut={(event) => onMouseOut(event)}
+                    onMouseLeave={() => {
+                      this.setState({ showResearchMenu: false });
+                    }}
+                    onClick={() => {
+                      window.location.href = "/";
+                    }}
+                    show={this.state.showResearchMenu}
+                  >
+                    <NavDropdown.Item
+                      href="/"
+                      style={{ color: theme.secondaryText }}
+                      onMouseEnter={(event) =>
+                        onMouseEnter(event, theme.highlight)
+                      }
+                      onMouseOut={(event) => onMouseOut(event)}
+                    >
+                      CoinTracker
                     </NavDropdown.Item>
                   </NavDropdown>
 
